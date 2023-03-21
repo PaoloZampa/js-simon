@@ -15,8 +15,8 @@ for (let i = 0; i < randomNumbers.length; i++) {
         container.classList.add('d-none')
         let userNumbers = Number(prompt("inserisci i tuoi numeri uno alla volta!"));
         console.log(userNumbers);
-        if (userNumbers == randomNumbers[i]){
-            alert('hai vinto')
+        if (userNumbers !== randomNumbers[i]){
+            alert(`Il numero ${userNumbers} non è presente! Ricarica la pagina da solo che io non lo so fare!`)
         }
     }, 3000); 
 }
